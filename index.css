@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height:55px;
+    line-height: 55px;
+    padding: 0px 50px;
+    position: sticky;
+    background-image: linear-gradient(#033747,#012733);
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: #ff8c69;
+    transition: all 0.4s ease 0;
+}
+@media screen and (min-width:0px) and (max-width:588px){
+    .container ul li{
+        /* display: inline-block; */
+        width: 97.2%;
+    }
+    nav{
+        padding: 0px 20px;
+    }
+    nav .logo p{
+        font-size:20px;
+        padding-left: 0px;
+        position: relative;
+    }
+    nav li a{
+        font-size: 12px;
+        padding-right: 5px;
+    }
+}
+@media screen and (min-width:588px) and (max-width:1093px){
+    .container ul li{
+        /* display: inline-block; */
+        width: 48.8%;
+    }
+}
+@media screen and (min-width:0px) and (max-width:280px){
+    nav{
+        padding: 0px 10px;
+    }
+    nav .logo p{
+        font-size:17px;
+        padding-left: 0px;
+        position: relative;
+    }
+    nav li a{
+        font-size: 10px;
+        padding-right: 5px;
+    }
+}
+.container li{
+    border: 3px solid black;
+    height: 337px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    width: 32.63%;
+    display: inline-block;
+    position: relative;
+}
+li{
+    /* overflow: inherit; */
+    transition: 0.5 linear;
+}
+li[id="list"]{
+    overflow: auto;
+}
+li p[id=text_head]{
+    background-color: #012733;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 38px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+li p.text_body{
+    /* text-align: center; */
+    align-items: center;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: serif;
+    font-weight: bolder;
+    text-overflow: inherit;
+}
+.btn-close{
+    width: 96%;
+    color: aliceblue;
+    /* padding-left: 213px; */
+    /* padding-right: 213px; */
+    background-color: rgb(14, 146, 14);
+    border: 3px groove black;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 2%;
+    border-radius: 2px;
+    transition: all 0.2s ease-in;
+}
+.btn-close:hover{
+    opacity: 0.7;
+    background-color: rgb(250, 3, 3);
+}
+.container{
+    padding-top: 10px;
+    padding-left: 5px;
+}
